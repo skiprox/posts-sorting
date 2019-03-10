@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sort01": "node index.js sortByLength --silent",
+    "sort02": "node index.js sortByPersonal"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "make-runnable": "^1.3.6"
+  }
 }
