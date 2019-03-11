@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sort01": "node index.js sortByLength --silent",
-    "sort02": "node index.js sortByPersonal"
+    "sort01": "node index.js sortByLength",
+    "sort02": "node index.js sortByPersonal",
+    "sort03": "node index.js sortByComplexThoughts"
   },
   "keywords": [],
   "author": "",
