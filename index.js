@@ -57,13 +57,13 @@ module.exports = {
 	sortByComplexThoughts: () => {
 		let week03 = posts.week03;
 		week03 = week03.sort((a, b) => {
-			var countA = (a.post.match(/and/g) || []).length;
+			var countA = (a.post.match(/ and /g) || []).length;
 			countA += (a.post.match(/additionally/g) || []).length;
-			countA += (a.post.match(/also/g) || []).length;
+			countA += (a.post.match(/ also/g) || []).length;
 			countA += (a.post.match(/further/g) || []).length;
-			var countB = (b.post.match(/and/g) || []).length;
+			var countB = (b.post.match(/ and /g) || []).length;
 			countB += (b.post.match(/additionally/g) || []).length;
-			countB += (b.post.match(/also/g) || []).length;
+			countB += (b.post.match(/ also/g) || []).length;
 			countB += (b.post.match(/further/g) || []).length;
 			return countB - countA;
 		});
